@@ -1,9 +1,18 @@
 # Hello World
-## Information:
-* Coding Language: Erlang
-* IDE Used: VS Code
+## Basic Information:
 * Created By: Nathan Burnett
-* Purpose: To output a simple print statement in terminal "Hello World".
+* Created On: 1/07/23 
+* Coding Language Used: Erlang
+* IDE Used: VS Code
+
+## Description
+This is a simple program written in **Erlang** that prints the message "Hello World" in the terminal.
+
+The purpose of this program is to practice the foundational basics of any language in this case being Erlang.
+
+## Video Walkthrough
+Click [Here]()
+
 
 ## Getting Started
 1. Make sure you have the **Erlang** compiler and tools for your OS.
