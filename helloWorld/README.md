@@ -11,7 +11,7 @@ This is a simple program written in **Erlang** that prints the message "Hello Wo
 The purpose of this program is to practice the foundational basics of any language in this case being Erlang.
 
 ## Video Walkthrough
-Click [Here]()
+Click [Here](https://youtu.be/uYFFE8EOze8)
 
 
 ## Getting Started
