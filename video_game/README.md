@@ -1,115 +1,46 @@
 # Overview
 
-I designed and developed a to-do list application using MongoDB, Node.js, Express, and Mongoose. The application is a simple yet effective tool for users to manage their tasks with ease and efficiency.
+Welcome to my latest video game project! I'm thrilled to share with you what I've been working on. For this project, I decided to make a video game using the Unreal Engine 5. I know there are many game engines out there, but the Unreal Engine has always intrigued me, and I couldn't wait to dive in and see what I could create with it.
 
-MongoDB was chosen as the database to store and retrieve the data due to its efficient storage and retrieval capabilities. Node.js was used as the backend of the application, built on top of the Express framework. Mongoose was used to provide a more streamlined approach to working with MongoDB and allowed for the easy definition and manipulation of data models.
+My goal was to create a simple first-person shooter game with a twist. I used assets from the Unreal Engine library to build the game's world, and then I added mechanics to pick up a weapon that shoots balls. The objective of the game is to find all the gems scattered throughout the map and shoot them down. It's a straightforward concept, but it was so much fun to build and play.
 
-The application has a simple and user-friendly interface, allowing users to add, edit, and delete tasks with ease. Throughout the development process, I focused on creating a simple and efficient application. 
+I chose to make a video game for this project because I'm a big fan of gaming, and I've always wanted to try my hand at building a game of my own. And let me tell you, it was an amazing experience! From designing the world and characters to coding the gameplay mechanics, every aspect of this project was challenging and rewarding.
 
-Overall, I am proud of the to-do list application that I have developed using MongoDB, Node.js, Express, and Mongoose. It has been a valuable learning experience for me
+ I should note that this is not a professional game. It was created solely for educational purposes. I had so much fun building it. Sadly the file is to large for github, and I have had some issues uploading it. I have provided a video showcasing it, but if you would like the file please send me a dm and I would be happy to send it your way.
 
-[Software Demo Video](https://drive.google.com/file/d/19Ectx0qf4DveIQ1d-UBclgjXK_exzLUk/view?usp=share_link)
+[Software Demo Video](/video_game/showcase.mp4)
 
 # Instructions
-1. Make sure you have all the proper technologies installed. Look below at helpful links for better direction. You need to have the following:
-- Node.js
-- MongoDB
-- Express
-- Mongoose
-- JavaScript
-- Some sort of editor (I used VS Code)
-
-2. To launch this app. Go to the file linked below where it says "Application Launch" or the file name is index.js.
-
-3. Open a new console
-
-4. type in 
-```js
-npm start
-```
-
-5. The program should connect to a database. NOTE: MAKE SURE YOU CREATE a DATABASE/cluster with MONGODB and get its URL. You will then create a file titled < .env > in the main folder. In the .env file paste the database url or data connection string:
-```js
-DB_CONNECT = "mongodb+srv://[USERNAME]}:[PASSWORD]a@todolist.mzqzbib.mongodb.net/?retryWrites=true&w=majority"
-```
-
-6. Once the server is up go to a browser and type in:
-
-```html
-http://localhost:3000
-```
-
-7. You should see the app working and its pretty straight forward from there. 
-
-
+1. Watch the showcase
+2. If you like it, and want to play it send me a dm.
 
 # Table of Contents
 
-- [Application Launch](/index.js)
-- [HTML Documents](./views)
-- [CSS and Assets](./public)
-- [Database Models](./models)
+- [Showcase Video](/video_game/showcase.mp4)
 
 # Development Environment
 
-So, for my to-do list web application, I used **Node.js** as the platform to build the server-side logic. Node.js is really great for building fast and scalable network applications. It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, so it's perfect for data-intensive real-time applications like mine.
+* **Unreal Engine 5:** Unreal Engine 5 is a powerful game engine developed by Epic Games. It offers an extensive set of tools and features for building high-quality games for various platforms. With its intuitive interface, advanced rendering capabilities, and robust physics engine, Unreal Engine 5 is a popular choice for many game developers.
 
-To store the data for my to-do list application, I used **MongoDB**. It stores data in flexible, JSON-like documents, which means I can easily change the data structure over time. Plus, MongoDB is really scalable and can handle large amounts of data.
+* **Unreal Engine Marketplace:** The Unreal Engine Marketplace is an online store that offers a wide range of assets, including 3D models, textures, materials, animations, and more. These assets can be used in Unreal Engine projects to speed up development time and enhance the game's visual quality. The Marketplace is a great resource for indie developers who want to create high-quality games without having to build everything from scratch.
 
-For the server-side routing and request handling, I used **Express**. It's a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. This made it really easy to customize my application and build it to meet my specific needs.
-
-To allow users to create, read, update, and delete tasks, I used **CRUD** operations. These are the basic operations that any web application that manages data would need to have.
-
-To provide a flexible and scalable interface for client-side interactions, I used **RESTful APIs**. These are really reliable and easy to use, and they allowed me to implement features like search, filtering, and sorting of tasks.
-
-To add interactivity and functionality to my web pages, I used **JavaScript**. It's what allowed me to make my application respond dynamically to user actions, which provides a really seamless user experience.
-
-For the structure and content of my web pages, I used **HTML**. It's what allowed me to define the layout and content of my pages in a really intuitive way.
-
-And finally, for the visual appearance of my web pages, I used **CSS**. It allowed me to define the styles for different elements on my pages, like fonts, colors, and layout. This made my application look really nice and easy to use!
-
-While building my application, I found that using **Google Chrome** as my web browser was really helpful, since it has great developer tools that allowed me to easily debug and troubleshoot any issues that came up. And I used **Visual Studio Code (VS Code)** as my code editor, since it's really powerful and easy to use. It allowed me to write my code more quickly and efficiently, which was really important since I wanted to build my application as quickly as possible.
-
-- Node.js
-- MongoDB
-- Express
-- Mongoose
-- JavaScript
-- HTML
-- CSS
+- Unreal Engine 5
+- Unreal ENgine Marketplace
 
 
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
+- **[Unreal Engine Documentation](https://docs.unrealengine.com/)**: The official documentation for Unreal Engine 5 is a valuable resource for developers. It contains detailed information on all aspects of the engine, including tutorials, reference guides, and API documentation.
 
-**Node.js**:
-- [Official Node.js Documentation](https://nodejs.org/en/docs/) - A comprehensive guide to using Node.js.
-- [Node.js Tutorial for Beginners](https://www.tutorialspoint.com/nodejs/index.htm) - A beginner-friendly tutorial on Node.js.
+- **[Unreal Engine YouTube Channel](https://www.youtube.com/unrealengine)**: The Unreal Engine YouTube channel is a great resource for video tutorials, live streams, and interviews with developers who use the engine. It's a great way to learn about new features and get insights into how other developers use Unreal Engine 5.
 
-**MongoDB**:
-- [Official MongoDB Documentation](https://docs.mongodb.com/manual/) - The official documentation for MongoDB.
-- [MongoDB University](https://university.mongodb.com/) - Free online courses on MongoDB, including a course on MongoDB basics.
+- **[Unreal Engine Forums](https://forums.unrealengine.com/)**: The Unreal Engine forums are a helpful community where developers can ask questions, share knowledge, and get support. It's a great place to connect with other developers and learn from their experiences.
 
-**Express**:
-- [Official Express.js Documentation](https://expressjs.com/) - The official documentation for Express.js.
-- [Express.js Tutorial for Beginners](https://www.tutorialspoint.com/expressjs/index.htm) - A beginner-friendly tutorial on Express.js.
+- **[Unreal Engine Marketplace](https://www.unrealengine.com/marketplace)**: The Unreal Engine Marketplace is a great resource for assets, plugins, and other tools that can be used in Unreal Engine 5 projects. It's a great way to speed up development time and enhance the visual quality of your game.
 
-**CRUD Operations**:
-- [CRUD Operations in MongoDB](https://www.mongodb.com/blog/post/quick-start-crud-operations-mongodb-nodejs) - A tutorial on implementing CRUD operations with MongoDB and Node.js.
+- **[Unreal Engine Learning](https://www.unrealengine.com/en-US/onlinelearning-courses)**: Unreal Engine Learning is a collection of online courses, tutorials, and other resources designed to help developers learn how to use Unreal Engine 5. It covers a wide range of topics, from beginner-level introductions to advanced techniques.
 
-**RESTful APIs**:
-- [Representational State Transfer (REST) API Tutorial](https://restfulapi.net/) - A beginner-friendly tutorial on RESTful APIs.
+- **[Unreal Engine GitHub Repository](https://github.com/EpicGames/UnrealEngine)**: The Unreal Engine GitHub repository is a valuable resource for developers who want to contribute to the engine or access the source code. It's also a great way to see how the engine works under the hood.
 
-**JavaScript**:
-- [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - A comprehensive guide to JavaScript.
-- [JavaScript Tutorial for Beginners](https://www.tutorialspoint.com/javascript/index.htm) - A beginner-friendly tutorial on JavaScript.
-
-**Coding Language/Syntax**:
-
-**W3Schools**:
-- [W3Schools](https://www.w3schools.com/) - An online learning platform that offers tutorials and references on web development technologies such as HTML, CSS, JavaScript, and more.
-- [Stack Overflow](https://stackoverflow.com/) - A community-driven Q&A website for programmers to help and learn from each other.
-- [GeekforGeeks](https://www.geeksforgeeks.org/) - A website that provides articles, tutorials, and practice problems in various programming languages and computer science topics.
-- [ChatGPT](https://chat.openai.com/) - An AI that helped me with troubleshooting and generating various wording and collecting information and summarizing content. 
+- **[Youtube](https://youtube.com)**: There is a plethora of great tutorials and videos made by various people.
