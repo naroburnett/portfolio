@@ -1,6 +1,8 @@
 const form = document.querySelector("form");
 const pokemonData = document.querySelector("#pokemon-list");
 
+let myPokemon = [];
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const searchName = document.querySelector("#search-input").value.trim();
@@ -50,16 +52,20 @@ async function getPokemon(
     pokemonData = pokemonData.concat(data);
   }
 
-  // Search by Generation
+  // Search by Generation access the pokemon species go to url for each pokemon species then go to varieties go to url for each variety and get the pokemon data
   if (searchGeneration !== "") {
-    url += `generation/${searchGeneration.toLowerCase()}`;
+    url += `generation/${searchGeneration}`;
     let response = await fetch(url);
     data = await response.json();
-    //for each pokemon in the generation, get the pokemon data
+    //for each pokemon species in the data , get the pokemon data
     for (let i = 0; i < data.pokemon_species.length; i++) {
-      let pokemon = data.pokemon_species[i];
-      let response = await fetch(pokemon.url);
-      poke_data = await response.json();
+      let pokemonSpecies = data.pokemon_species[i];
+      let response = await fetch(pokemonSpecies.url);
+      let poke_species_data = await response.json();
+      //for the first variety in the pokemon species data , get the pokemon data
+      let pokemonVariety = poke_species_data.varieties[0];
+      response = await fetch(pokemonVariety.pokemon.url);
+      let poke_data = await response.json();
       pokemonData = pokemonData.concat(poke_data);
     }
   }
@@ -75,9 +81,6 @@ function renderPokemon(pokemonData, page) {
   const endIndex = startIndex + 25;
 
   pokemonData.slice(startIndex, endIndex).forEach((pokemon) => {
-    // const listItem = document.createElement("li");
-    // listItem.innerText = pokemon.name;
-    // pokemonContainer.appendChild(listItem);
     // for each pokemon, create a item that will contain the pokemon data (name,image, types, and stats) and append it to the pokemon container (pokemon-list)
     const listItem = document.createElement("li");
     listItem.classList.add("pokemon-item");
@@ -107,6 +110,15 @@ function renderPokemon(pokemonData, page) {
     listItem.appendChild(pokemonTypes);
     listItem.appendChild(pokemonStats);
     pokemonContainer.appendChild(listItem);
+
+    //create a button that will add the pokemon to the my pokemon list
+    const addPokemonButton = document.createElement("button");
+    addPokemonButton.innerText = "Add to My Pokemon";
+    addPokemonButton.addEventListener("click", () => {
+      myPokemon.push(pokemon);
+      console.log(myPokemon);
+    });
+    listItem.appendChild(addPokemonButton);
   });
 
   let buttonContainer = document.querySelector(".button-container");
@@ -116,7 +128,7 @@ function renderPokemon(pokemonData, page) {
 
   buttonContainer = document.createElement("div");
   buttonContainer.classList.add("button-container");
-
+  // if the page is greater than 1, create a previous button and add an event listener to it that will call the renderPokemon function with the previous page
   if (page > 1) {
     const prevButton = document.createElement("button");
     prevButton.innerText = "Previous";
@@ -125,7 +137,7 @@ function renderPokemon(pokemonData, page) {
     });
     buttonContainer.appendChild(prevButton);
   }
-
+  // if the end index is less than the pokemon data length, create a next button and add an event listener to it that will call the renderPokemon function with the next page
   if (endIndex < pokemonData.length) {
     const nextButton = document.createElement("button");
     nextButton.innerText = "Next";
@@ -134,7 +146,36 @@ function renderPokemon(pokemonData, page) {
     });
     buttonContainer.appendChild(nextButton);
   }
-
+  // append the button container to the search results
   const searchResults = document.getElementById("search-results");
   searchResults.appendChild(buttonContainer);
+}
+
+//add a function that will calculate the average stats of the pokemon in the my pokemon list
+function calculateAverageStats() {
+  let averageStats = {};
+  let totalStats = {};
+  let count = 0;
+  for (let i = 0; i < myPokemon.length; i++) {
+    let pokemon = myPokemon[i];
+    for (let j = 0; j < pokemon.stats.length; j++) {
+      let stat = pokemon.stats[j];
+      if (totalStats[stat.stat.name]) {
+        totalStats[stat.stat.name] += stat.base_stat;
+      } else {
+        totalStats[stat.stat.name] = stat.base_stat;
+      }
+      count++;
+    }
+  }
+  for (let stat in totalStats) {
+    averageStats[stat] = totalStats[stat] / count;
+  }
+  return averageStats;
+}
+
+//function to remove the pokemon from the my pokemon list
+function removePokemon(pokemon) {
+  const index = myPokemon.indexOf(pokemon);
+  myPokemon.splice(index, 1);
 }
