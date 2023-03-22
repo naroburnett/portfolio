@@ -2,7 +2,7 @@
 
 Welcome to my latest web app project! I'm excited to share with you what I've been working on. This is a JavaScript webapp that allows a user to navigate the PokeAPI to look up Pokémon and add them to a team.
 
-[Software Demo Video](/)
+[Software Demo Video](/assets/pokeapi.mp4)
 
 ## Overview
 
