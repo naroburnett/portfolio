@@ -107,5 +107,22 @@ A Python-based tool to optimize images for web use by resizing and compressing t
 - Processes images in bulk and saves optimized versions in an output directory.
 
 ---
+## Flutter Dating Application Project
+
+**Description:**  
+A collaborative **Flutter-based dating web application** designed to facilitate user authentication, account management, and interaction. The project consists of both frontend and backend components, with my primary focus being on backend development.
+
+**Skills & Concepts:**
+
+- **Technologies:** JavaScript, Node.js, Express, PostgreSQL, Render, pgAdmin
+- **Concepts:** Authentication, REST API development, database management
+- **Principles:** Scalability, security, efficient data handling
+
+**Highlights:**
+
+- **Frontend:** Developed using Flutter, providing an intuitive user interface and authentication system.  
+  [Flutter Dating Application Project Front-end](https://github.com/naroburnett/FlutterFrontEnd)
+- **Backend:** Built as a REST API using Node.js and Express, handling authentication and data transactions.  
+  [Flutter Dating Application Project Back-end](https://github.com/naroburnett/FlutterBackEnd)
 
 Thank you for visiting my portfolio repository!
