@@ -11,8 +11,7 @@ Welcome to my portfolio repository! This collection showcases a variety of proje
 - [PokeAPI Team Builder](#pokeapi-team-builder)
 - [Python Mini-Projects](#python-mini-projects)
 - [Image Optimizer](#image-optimizer)
-- [Flutter Dating Application Project Front-end](https://github.com/naroburnett/FlutterFrontEnd)
-- [Flutter Dating Application Project Back-end](https://github.com/naroburnett/FlutterBackEnd)
+- [Flutter Dating Application Project](#Flutter-Dating-Application-Project)
 
 ---
 
