@@ -120,8 +120,8 @@ A collaborative **Flutter-based dating web application** designed to facilitate 
 **Highlights:**
 
 - **Frontend:** Developed using Flutter, providing an intuitive user interface and authentication system.  
-  [Flutter Dating Application Project Front-end](https://github.com/naroburnett/FlutterFrontEnd)
+  [Flutter Dating Application Project Front-end Repository](https://github.com/naroburnett/FlutterFrontEnd)
 - **Backend:** Built as a REST API using Node.js and Express, handling authentication and data transactions.  
-  [Flutter Dating Application Project Back-end](https://github.com/naroburnett/FlutterBackEnd)
+  [Flutter Dating Application Project Back-end Repository](https://github.com/naroburnett/FlutterBackEnd)
 
 Thank you for visiting my portfolio repository!
