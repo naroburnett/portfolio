@@ -1,0 +1,19 @@
+[project]
+name = "blacktie-scrapper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "bs4>=0.0.2",
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+    "pytest>=8.3.4",
+    "requests>=2.32.3",
+]
+
+[tool.pytest.ini_options]
+pythonpaths = ["src"]
